@@ -1,0 +1,53 @@
+		#front {
+			height: 300px; /*frame height*/
+			width:  500px; /*frame width*/
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			border: 1px solid red;
+			overflow: hidden;
+			z-index: 99;
+		}
+
+		#imagesHolder {
+			height: 300px;  /*images height*/
+			width:  2500px;  /*images height*(count of images)*/
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 1;
+			-webkit-transition: .3s left;
+		    -moz-transition: .3s left;
+		    -ms-transition: .3s left;
+		    -o-transition: .3s left;
+		}
+
+		#imagesHolder > ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			word-spacing: -.25em;
+		}
+
+		#imagesHolder > ul > li {
+			display: inline;
+			word-spacing: normal;
+			margin: 0;
+			padding: 0;
+		}
+
+		.toLeft {
+			top: 140px;
+			left: 5px;
+			position: absolute;
+			display: none;
+			z-index: 99;
+		}
+
+		.toRight {
+			top: 140px;
+			left: 455px;
+			position: absolute;
+			z-index: 99;
+		}
